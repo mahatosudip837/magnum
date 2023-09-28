@@ -154,6 +154,21 @@ h4{
 }
 .packages .tab-section .tab-button{
     padding: 10px 15px;
+    border: 1px solid var(--light-border);
+    cursor: pointer;
+}
+.packages .tab-section .tab-button img{
+    margin-right: 5px;
+}
+.packages .tab-section .tab-button.active-btn{
+    background: var(--light-primay);
+    color: #ffff;
+}
+.packages .tab-section .tab-button.tab-button-1{
+    border-radius: 10px 0 0 10px;
+}
+.packages .tab-section .tab-button.tab-button-2{
+    border-radius: 0 10px 10px 0;
 }
 
 /* packages code end */
