@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white border-bottom py-3">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="./images/Hotel Brochoure 1.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,20 +47,79 @@
 
               <div class="hero">
                 <div class="container">
-                    <div class="col-lg-6 col-12">
-                        <h2>It’s a big world out there,go explore</h2>
-                        <p>Distinctio modi perspiciatis autem. Eos provident similique impedit iusto dolorem in. Nisi numquam modi quasi est ipsa quia non perspiciatis iste. </p> 
-                        <button class="btn contact" type="submit">Book Now</button>
-                        <div class="social-link">
-                            <p>Connect with Us</p>
-                            <a href=""><img src="./images/Facebook.png" alt=""> <span>Facebook</span></a>
-                            <a href=""><img src="./images/Vector.png" alt=""></i> <span>Facebook</span></a>
-                        </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-12 left">
+                      <h2>It’s a big world out there,go explore</h2>
+                      <p>Distinctio modi perspiciatis autem. Eos provident similique impedit iusto dolorem in. Nisi numquam modi quasi est ipsa quia non perspiciatis iste. </p> 
+                      <button class="btn contact" type="submit">Book Now</button>
+                      <div class="social-link">
+                          <p class="mb-4">Connect with Us</p>
+                          <div class="social-icon d-flex">
+                            <a href="" class="mr-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook mr-1"></i> <span>Facebook</span></a>
+                            <a href="" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-whatsapp mr-1"></i> <span>Whatsapp</span></a>
+                          </div>
+                      </div>
                     </div>
-                    <div class="col-lg-6 col-12"></div>
+                    <div class="col-lg-6 col-12 right d-flex">
+                      <div class="first-column column">
+                        <img src="./images/hero image 1.png" alt="" class="img-fluid img-1">
+                        <img src="./images/hero image 2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="second-column column">
+                        <img src="./images/hero image 3.png" alt="" class="img-fluid h-100">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
     </header>
+
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12 left">
+              <div class="first-row my-row">
+                <img src="./images/about img 1.png" alt="" class="img-fluid">
+              </div>
+              <div class="second-row my-row">
+                <img src="./images/about img 2.png" alt="" class="img-fluid">
+                <img src="./images/about img 3.png" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 right">
+              <h4>About us</h4>
+              <h2>Explore the world with us</h2>
+              <p>Distinctio modi perspiciatis autem. Eos provident similique impedit iusto dolorem in. Nisi numquam modi quasi est ipsa quia non perspiciatis iste. </p>
+              <h5>Features are as follows : </h5>
+              <div class="box">
+                <p><img src="./images/Forward Button.png" alt=""><span>Natus ipsum eveniet.</span></p>
+                <p>At perspiciatis pariatur illo fuga cum. Quam minus sit dolorum et. Exercitationem necessitatibus eius minus quam. Facere labore </p>
+              </div>
+              <div class="box">
+                <p><img src="./images/Forward Button.png" alt=""><span>Natus ipsum eveniet.</span></p>
+                <p>At perspiciatis pariatur illo fuga cum. Quam minus sit dolorum et. Exercitationem necessitatibus eius minus quam. Facere labore </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section class="packages">
+          <div class="container">
+            <h4>Packages</h4>
+            <div class="tab-section d-flex justify-content-between">
+              <div class="left">
+                <p><span>Our Top Packages</span><a href="">EXPLORE ALL</a></p>
+              </div>
+              <div class="right d-flex">
+                <div class="tab-button active-btn border bg-info" data-tab="tab1"><img src="./images/Car.png" alt="">Domestic</div>
+                <div class="tab-button border" data-tab="tab2"><img src="./images/Airplane Take Off.png" alt="">International</div>
+              </div>
+          </div>
+          </div>
+        </section>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
