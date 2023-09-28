@@ -18,7 +18,7 @@
     <title>Magnum Holidays</title>
   </head>
   <body>
-    <header>
+    <header id="home">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="./images/Hotel Brochoure 1.png" alt=""></a>
@@ -45,7 +45,7 @@
                         </li>
                       </ul>
                       <form class="form-inline my-2 my-lg-0">
-                        <button class="btn contact" type="submit">Contact Us</button>
+                        <button class="btn contact" type="submit" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
                       </form>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     <div class="col-lg-6 col-12 left">
                       <h2>It’s a big world out there,go explore</h2>
                       <p>Distinctio modi perspiciatis autem. Eos provident similique impedit iusto dolorem in. Nisi numquam modi quasi est ipsa quia non perspiciatis iste. </p> 
-                      <button class="btn contact" type="submit">Book Now</button>
+                      <button class="btn contact" type="submit" data-toggle="modal" data-target="#exampleModal">Book Now</button>
                       <div class="social-link">
                           <p class="mb-4">Connect with Us</p>
                           <div class="social-icon d-flex">
@@ -81,6 +81,9 @@
     </header>
 
     <main>
+
+      <!-- about section start  -->
+
       <section class="about">
         <div class="container">
           <div class="row">
@@ -110,6 +113,10 @@
           </div>
         </div>
       </section>
+
+      <!-- about section end  -->
+
+      <!-- packages section start  -->
 
         <section class="packages">
           <div class="container">
@@ -517,6 +524,8 @@
           </div>
         </section>
 
+        <!-- hotel section end  -->
+
         <!-- service section start  -->
 
         <section class="services">
@@ -579,6 +588,103 @@
 
         <!-- service section end -->
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 first-column mb-2">
+            <div class="logo-img">
+              <img src="./images/Hotel Brochoure 1.png" alt="">
+            </div>
+            <p>Rerum dolor corrupti ea. Recusandae eligendi velit quaerat sed asperiores qui nostrum molestias in. Nemo commodi nobis sit facilis. Vitae quam repudiandae distinctio.</p>
+            <h5>FOLLOW US ON</h5>
+            <div class="social-icon">
+              <a href=""><img src="./images/facebook (3) 1.png" alt=""></a>
+              <a href=""><img src="./images/twitter (3) 1.png" alt=""></a>
+              <a href=""><img src="./images/instagram (5) 1.png" alt=""></a>
+              <a href=""><img src="./images/youtube (3) 1.png" alt=""></a>
+              <a href=""><img src="./images/linkedin (1) 1.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-2">
+            <h5 class="mb-4">OUR SERVICES</h5>
+            <ul>
+              <li><a href="">International travels</a></li>
+              <li><a href="">Domestic travels</a></li>
+              <li><a href="">Solo travels</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-2">
+            <h5 class="mb-4">QUICK LINKS</h5>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Packages</a></li>
+              <li><a href="">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 column-four mb-2">
+            <h5 class="mb-4">GET IN TOUCH</h5>
+            <p><img src="./images/location.png" alt=""><span>Some addresss</span></p>
+            <h6>Sales</h6>
+            <p><img src="./images/call.png" alt=""><span>+91 9234i372937</span></p>
+            <p><img src="./images/call.png" alt=""><span>(033) 34793  83433</span></p>
+            <p><img src="./images/email (3) 1.png" alt=""><span>something@gmail.com</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer mt-4 py-4 ">
+        <div class="container d-flex justify-content-between align-items-center">
+          <p><a href="">Privacy policy</a> | <a href="">Term & Conditions</a></p>
+          <p>© 2023. ALL RIGHT RESERVED.</p>
+          <p>Powered by MPS InfoServices</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6 col-12 d-flex flex-column justify-content-between align-content-between">
+                <div class="upper">
+                  <h3>Let’s Talk</h3>
+                  <p>Ask us Anything or just say hi...</p>
+                </div>
+                <div class="down">
+                  <p>☎️ +91 97826372537</p>
+                  <p>💌  somemail@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <input type="text" class="form-control" id="exampleInputname" placeholder="John ...">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johndoe@gmail.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Hey there ...."></textarea>
+                  </div>
+                  <button type="submit" class="btn contact">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- owl carousel cdn  -->
 
