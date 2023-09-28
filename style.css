@@ -152,13 +152,14 @@ h4{
 
 .packages{
     padding: 73px 0;
+    border-bottom: 1px solid var(--light-border);
 }
 .packages .tab{
     position: relative;
 }
-.packages .tab p.packages{
+.packages .tab p.para-packages{
     position: absolute;
-    bottom: -43px;
+    bottom: 30px;
     left: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -267,6 +268,9 @@ h4{
     margin: -1px 0 0;
 }
 .active-tab {
+    display: block;
+}
+.tab.active-1{
     display: block;
 }
 
