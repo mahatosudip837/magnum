@@ -591,6 +591,7 @@ footer .footer p{
     .form-packages-all .form-control {
         width: 90%;
     }
+
 }
 @media screen and (min-width: 576px) and (max-width:767px){
     .form-packages-all .form-control {
@@ -616,6 +617,9 @@ footer .footer p{
     .line-2{
         width: 67% !important; 
         left: 12% !important;
+    }
+    nav ul li a.nav-link::before{
+        left: 41px;
     }
 }
 @media screen and (max-width:767px){
