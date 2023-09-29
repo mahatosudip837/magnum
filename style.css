@@ -445,6 +445,9 @@ h4{
 .tab-box-details .money{
     padding: 0 10px;
 }
+.tab-box-details .money p{
+    font-weight: 600;
+}
 .form-packages-all .form-control{
     width: 94%;
     font-size: 14px;
@@ -482,6 +485,9 @@ h4{
 .line-2{
     width: 83% !important;
     left: 7% !important;
+}
+.hotel-all .tab-box-details p.para-time{
+    padding: 5px !important;
 }
 
 /* hotel section end  */
