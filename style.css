@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    /* outline: 2px solid red; */
 }
 :root{
     --light-text:#433F3F;
@@ -13,6 +14,9 @@
     --primary:#E31E24;
     --background:#1E1E1E;
     --border:#433F3F;
+}
+html{
+    scroll-behavior: smooth;
 }
 p{
     margin-bottom: 0 !important;
@@ -87,9 +91,14 @@ textarea{
     border-radius: 10px;
     line-height: 0;
     outline: none;
+    transition: all 1s ease;
 }
 .modal-hotel-img .owl-nav button:hover{
     background: #fff !important;
+    color: #000000 !important;
+}
+.modal-hotel-img .owl-nav button:hover span{
+    color: #000000 !important;
 }
 
 .modal-hotel-img .owl-nav button.owl-next span, 
@@ -159,6 +168,12 @@ body{
     font-size: 16px;
     color: var(--light-text);
 }
+.home.my-sticky-top{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 nav{
     border-bottom: 1px solid #000000;
 }
@@ -183,11 +198,11 @@ nav ul li a.nav-link::before {
     transition: all .5s ease;
 }
 nav ul li:hover a.nav-link,
-nav ul li.active a.nav-link{
+nav ul li a.nav-link.active{
     color: var(--light-primay) !important;
 }
 nav ul li:hover a.nav-link::before,
-nav ul li.active a.nav-link::before{
+nav ul li a.nav-link.active::before{
     width: 18px;
 }
 .btn.contact{
@@ -199,7 +214,7 @@ nav ul li.active a.nav-link::before{
     margin: 20px 0;
 }
 .hero{
-    padding: 10% 0 80px;
+    padding: 173px 0 73px;
     border-bottom: 1px solid var(--light-border);
 }
 .hero h2{
@@ -287,6 +302,9 @@ h4{
 .packages{
     padding: 73px 0;
     border-bottom: 1px solid var(--light-border);
+}
+.packages h4 i{
+    color: var(--light-text);
 }
 .packages .tab{
     position: relative;
@@ -427,6 +445,16 @@ h4{
 .tab-box-details .money{
     padding: 0 10px;
 }
+.form-packages-all .form-control{
+    width: 94%;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 0;
+}
+.form-packages-all .btn{
+    border: 1px solid var(--light-border);
+    background: #fff;
+}
 /* packages code end */
 
 /* hotel section start  */
@@ -554,6 +582,26 @@ footer .footer p{
         max-width: 1200px !important;
     }
 }
+@media screen and (min-width: 992px) and (max-width:1199px){
+    .form-packages-all .form-control {
+        width: 93%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:991px){
+    .form-packages-all .form-control {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:767px){
+    .form-packages-all .form-control {
+        width: 87%;
+    }
+}
+@media screen and (max-width: 575px){
+    .form-packages-all .form-control {
+        width: 80%;
+    }
+}
 @media screen and (max-width:991px){
     .hero .left{
         margin-bottom: 30px;
@@ -569,13 +617,9 @@ footer .footer p{
         width: 67% !important; 
         left: 12% !important;
     }
-    .about .left .second-row img{
-        height: 250px;
-    }
 }
 @media screen and (max-width:767px){
     .about .left .second-row{
-        flex-direction: column;
         margin-bottom: 20px;
     }
     .services p.para{
@@ -592,8 +636,8 @@ footer .footer p{
         width: 59% !important;
         left: 16% !important;
     }
-    .hero{
-        padding-top: 16%;
+    .about .left .second-row img{
+        width: 47%;
     }
 
     .packages .tab-section{
@@ -606,11 +650,11 @@ footer .footer p{
     .hero h2{
         width: 100%;
     }
+    footer .footer p {
+        font-size: 11px;
+    }
 }
 @media screen and (max-width:527px){
-    .hero{
-        padding-top: 20%;
-    }
     .packages .tab hr.line {
         width: 32%;
         left: 34%;
@@ -620,11 +664,6 @@ footer .footer p{
         left: 28% !important;
     }
     footer .footer p{
-        font-size: 9px;
-    }
-}
-@media screen and (max-width:400px){
-    .hero{
-        padding-top: 30%;
+        font-size: 7px;
     }
 }

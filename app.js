@@ -69,4 +69,5 @@ $(document).ready(function(){
 
         $("#" + tabId).addClass("active-tab");
     });
+
 })
