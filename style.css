@@ -10,6 +10,9 @@
     --light-text:#433F3F;
     --light-primay:#2363AA;
     --light-border:#A59E9E;
+    --primary:#E31E24;
+    --background:#1E1E1E;
+    --border:#433F3F;
 }
 p{
     margin-bottom: 0 !important;
@@ -27,6 +30,9 @@ ul,li{
 textarea{
     resize: none;
 }
+.modal-header{
+    padding: 10px 0 0 !important;
+}
 .modal-content {
     position: relative;
     display: flex;
@@ -41,6 +47,9 @@ textarea{
     width: 100%;
     padding: 0 20px 20px;
 }
+.modal-dialog.book-now .modal-content{
+    background: #171717;
+}
 .modal-body h3{
     font-size: 36px;
     font-weight: 600;
@@ -48,6 +57,103 @@ textarea{
 .modal-body label{
     font-size: 14px;
     font-weight: 600;
+}
+.modal-body{
+    padding-top: 0 !important;
+}
+.modal-dialog.book-now .modal-body p span{
+    font-weight: 600;
+}
+.modal .btn.contact{
+    border-radius: 5px !important;
+}
+.modal-hotel-img .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    bottom: -53px;
+    right: 0;
+    z-index: 10;
+}
+.modal-hotel-img .owl-nav button.owl-next, 
+.modal-hotel-img .owl-nav button.owl-prev {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    border: 1px solid var(--light-border);
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    line-height: 0;
+    outline: none;
+}
+.modal-hotel-img .owl-nav button:hover{
+    background: #fff !important;
+}
+
+.modal-hotel-img .owl-nav button.owl-next span, 
+.modal-hotel-img .owl-nav button.owl-prev span{
+    font-size: 30px;
+    color: #fff;
+}
+.modal-dialog.book-now .modal-body h5{
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+.modal-dialog.book-now .modal-body h5 span{
+    padding: 5px 10px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.modal-dialog.book-now .modal-body p{
+    color: #fff;
+}
+.modal-dialog.book-now .modal-body label{
+    color: #fff;
+}
+.modal-dialog.book-now .btn.contact{
+    background: var(--primary) !important;
+}
+.modal-dialog.book-now .form-control{
+    background: var(--background);
+    border-color: var(--border);
+}
+.modal-dialog.book-now .down{
+    color: #fff;
+}
+.modal-hotel-img item{
+    border-radius: 10px;
+}
+@media screen and (min-width: 768px){
+.modal-dialog {
+    max-width: 797px !important;
+    margin: 1.75rem auto;
+}
+}
+@media screen and (max-width: 575px){
+.modal-dialog {
+    max-width: 400px !important;
+    margin: 1.75rem auto;
+}
+.modal-dialog.book-now .modal-body h5{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.modal-dialog.book-now .modal-body p{
+    font-size: 12px;
+    margin-bottom: 10px !important;
+}
+}
+@media screen and (min-width: 575px){
+.modal-dialog.book-now {
+    max-width: 99% !important;
+    margin: 10px auto !important;
+}
 }
 body{
     font-size: 16px;
